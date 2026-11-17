@@ -14,7 +14,7 @@
 <meta name="apple-mobile-web-app-title" content="Quản lý xe">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script src="https://congthongtinbds.github.io/xe-ghep/config.js"></script>
+<script src="https://xeghepsieutoc.github.io/config.js"></script>
 <style>
 :root{--g9:#0b4f30;--g8:#0d6340;--g7:#0f7a48;--g6:#169257;--g1:#dcf5e7;--g0:#effaf3;--ink:#10231a;--ink2:#3d5247;--mut:#6b7d73;--line:#e3ebe6;--bg:#f2f5f3;--red:#d93636;--amb:#b7791f;--blu:#2556b8}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -299,7 +299,7 @@ table.t{width:100%;border-collapse:collapse;font-size:13.5px}
         <div><span class="note">Trang khách đặt xe</span><div class="tool" style="margin-top:4px"><input class="f" id="qrLink" readonly style="flex:1"><button class="btn sec sm" data-copy="qrLink">Copy</button></div></div>
         <div><span class="note">Trang quản lý (chỉ mình bạn)</span><div class="tool" style="margin-top:4px"><input class="f" id="admLink" readonly style="flex:1"><button class="btn sec sm" data-copy="admLink">Copy</button></div></div>
       </div>
-      <div class="act"><a class="btn" href="https://congthongtinbds.github.io/xe-ghep/qr.html" target="_blank">🖨️ Mở trang tạo & in poster QR</a><a class="btn sec" href="https://congthongtinbds.github.io/xe-ghep/" target="_blank">👀 Xem trang khách</a></div>
+      <div class="act"><a class="btn" href="https://xeghepsieutoc.github.io/qr.html" target="_blank">🖨️ Mở trang tạo & in poster QR</a><a class="btn sec" href="https://xeghepsieutoc.github.io/" target="_blank">👀 Xem trang khách</a></div>
       <p class="note">Mẹo: ở trang tạo QR, điền “Nguồn QR” (VD biển số xe, tên khách sạn) để thống kê biết khách đến từ đâu.</p>
     </div>
   </section>
@@ -371,7 +371,7 @@ $("nav").onclick=function(e){var b=e.target.closest("button");if(!b)return;
   render();window.scrollTo(0,0);};
 
 function boot(){
-  $("qrLink").value="https://congthongtinbds.github.io/xe-ghep/";
+  $("qrLink").value="https://xeghepsieutoc.github.io/";
   $("admLink").value=location.href.replace(/[?#].*$/,"");
   if(INFO.sheetUrl)$("sheetBtn").href=INFO.sheetUrl;
   Promise.all([call("getConfig"),call("listOrders")]).then(function(r){
